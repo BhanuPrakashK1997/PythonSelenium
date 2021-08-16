@@ -3,6 +3,7 @@
 """
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+
 import time
 
 class CommonFunctions:
@@ -14,7 +15,8 @@ class CommonFunctions:
         """
 
         """
-        self.browser = webdriver.Chrome(("../AppDrivers/chromedriver.exe"))
+        self.browser = webdriver.Firefox(executable_path='C:/Users/Bhanu Prakash/repo/PythonSelenium/AppDrivers/geckodriver.exe')
+        #self.browser = webdriver.Chrome('../AppDrivers/chromedriver.exe')
 
     def open_url(self, url):
         """
@@ -51,7 +53,7 @@ class CommonFunctions:
         :param value:
         :return:
         """
-        time.sleep(3)
+        time.sleep(1)
         self.browser.find_element(By.XPATH, x_path).send_keys(value)
 
 
@@ -61,9 +63,16 @@ class CommonFunctions:
         :param x_path:
         :return:
         """
-        time.sleep(3)
+        time.sleep(1)
         self.browser.find_element(By.XPATH,x_path).click()
 
-
-
+    # def click_on_element_in_xpath(self,x_path):
+    #     """
+    #
+    #     :param x_path:
+    #     :return:
+    #     """
+    #     self.browser.find_element_by_xpath(By.XPATH,x_path).click()
+    def close(self):
+        self.browser.close()
 
