@@ -8,7 +8,7 @@ class FacebookLogin:
 
     """
 #     username_xpath = '//input[@name="email"]'
-#     password_xpath = '//input[@name="pass"]'
+#     password_xpath =
 #     login_btn_xpath = '//button[@name="login"]'
 #
 # # class FacebookPost:

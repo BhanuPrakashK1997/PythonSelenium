@@ -28,7 +28,7 @@ commonfunc.click_on_element(p2_objects.product6_xpath)
 
 commonfunc.click_on_element(p2_objects.cart_xpath)
 commonfunc.click_on_element(p2_objects.checkout_xpath)
-# commonfunc.click_on_element(p2_objects.continue_xpath)
+
 
 commonfunc.click_on_inputs_send_keys(p2_objects.firstName_xpath,p2_creds['firstname'])
 commonfunc.click_on_inputs_send_keys(p2_objects.lastname_xpath,p2_creds['lastname'])
